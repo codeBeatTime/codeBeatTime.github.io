@@ -1,436 +1,1169 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+
+
 
   
-  <title>风起</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.0.6" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.0.6">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.0.6">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.0.6">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.0.6" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.0.6',
+    sidebar: {"position":"left","display":"always","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
   <meta property="og:type" content="website">
 <meta property="og:title" content="风起">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="风起">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="风起">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="风起" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>风起</title>
   
-    <link rel="alternate" href="/atom.xml" title="风起" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">风起</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">风起于青萍之末</a>
-        </h2>
-      
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> 
+
+<div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">风起</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Buscar"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
+      
+        <p class="site-subtitle"></p>
+      
   </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world - 副本 (6)" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/17/hello-world - 副本 (6)/" class="article-date">
-  <time datetime="2018-03-17T13:38:02.134Z" itemprop="datePublished">2018-03-17</time>
-</a>
-    
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
   </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/17/hello-world - 副本 (6)/">素颜照</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
         
-        <h2 id="素颜照"><a href="#素颜照" class="headerlink" title="素颜照"></a>素颜照</h2><h2 id="素颜照-1"><a href="#素颜照-1" class="headerlink" title="素颜照"></a>素颜照</h2><p><img src="http://p5qifi539.bkt.clouddn.com/%E8%87%AA%E5%B7%B101.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E8%87%AA%E5%B7%B102.jpg" alt="image"></p>
+          
+  <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+</li>
 
       
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/17/hello-world - 副本 (6)/" data-id="cjevf4t7o0002h4wojj4o3a6z" class="article-share-link">Compartir</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world - 副本 (5)" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/17/hello-world - 副本 (5)/" class="article-date">
-  <time datetime="2018-03-17T13:37:01.986Z" itemprop="datePublished">2018-03-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/17/hello-world - 副本 (5)/">官湖夜景期待照片</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
         
-        <h2 id="官湖夜景期待照片"><a href="#官湖夜景期待照片" class="headerlink" title="官湖夜景期待照片"></a>官湖夜景期待照片</h2><h3 id="官湖夜景"><a href="#官湖夜景" class="headerlink" title="官湖夜景"></a>官湖夜景</h3><p><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF01.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF02.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF05.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF04.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF09.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF06.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF03.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF08.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF07.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF10.jpg" alt="image"></p>
+          
+  <li class="menu-item menu-item-about">
+    <a href="/about/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-user"></i> <br />简历</a>
+</li>
 
       
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/17/hello-world - 副本 (5)/" data-id="cjevf4t7p0003h4wotmr3y9id" class="article-share-link">Compartir</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world - 副本 (4)" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/17/hello-world - 副本 (4)/" class="article-date">
-  <time datetime="2018-03-17T13:32:48.314Z" itemprop="datePublished">2018-03-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/17/hello-world - 副本 (4)/">官湖海边期待照片</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
         
-        <h2 id="官湖海边期待照片"><a href="#官湖海边期待照片" class="headerlink" title="官湖海边期待照片"></a>官湖海边期待照片</h2><h3 id="官湖海边"><a href="#官湖海边" class="headerlink" title="官湖海边"></a>官湖海边</h3><p><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B902.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B901.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B905.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B904.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B907.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B903.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B906.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B918.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B917.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B919.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B916.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B921.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B913.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B914.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B920.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B911.jpg" alt="image"><br>![image]<a href="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B908.jpg" target="_blank" rel="noopener">http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B908.jpg</a>)<br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B909.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B910.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B915.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B912.jpg" alt="image"></p>
+          
+  <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+</li>
 
       
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/17/hello-world - 副本 (4)/" data-id="cjevf4t7s0006h4wo3obmjc56" class="article-share-link">Compartir</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world - 副本 (3)" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/17/hello-world - 副本 (3)/" class="article-date">
-  <time datetime="2018-03-17T13:32:45.220Z" itemprop="datePublished">2018-03-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/17/hello-world - 副本 (3)/">官湖森系期待照片</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
         
-        <h2 id="官湖森系期待照片"><a href="#官湖森系期待照片" class="headerlink" title="官湖森系期待照片"></a>官湖森系期待照片</h2><h3 id="官湖森系"><a href="#官湖森系" class="headerlink" title="官湖森系"></a>官湖森系</h3><p><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB03.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB02.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB10.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB04.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB06.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB08.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB01.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB05.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB07.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB09.jpg" alt="image"></p>
+          
+  <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+</li>
 
       
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/17/hello-world - 副本 (3)/" data-id="cjevf4t7m0001h4wosokp5fa4" class="article-share-link">Compartir</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world - 副本 (2)" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/17/hello-world - 副本 (2)/" class="article-date">
-  <time datetime="2018-03-17T13:32:44.596Z" itemprop="datePublished">2018-03-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/17/hello-world - 副本 (2)/">美人鱼基地期待照片</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
-        
-        <h2 id="美人鱼基地期待照片"><a href="#美人鱼基地期待照片" class="headerlink" title="美人鱼基地期待照片"></a>美人鱼基地期待照片</h2><h3 id="美人鱼基地"><a href="#美人鱼基地" class="headerlink" title="美人鱼基地"></a>美人鱼基地</h3><p><img src="http://p5qifi539.bkt.clouddn.com/%E7%BE%8E%E4%BA%BA%E9%B1%BC02.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E7%BE%8E%E4%BA%BA%E9%B1%BC01.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E7%BE%8E%E4%BA%BA%E9%B1%BC05.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E7%BE%8E%E4%BA%BA%E9%B1%BC03.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E7%BE%8E%E4%BA%BA%E9%B1%BC04.jpg" alt="image"></p>
 
       
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/17/hello-world - 副本 (2)/" data-id="cjevf4t7g0000h4wo8kickys1" class="article-share-link">Compartir</a>
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
       
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
       
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world - 副本" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/17/hello-world - 副本/" class="article-date">
-  <time datetime="2018-03-17T13:32:43.414Z" itemprop="datePublished">2018-03-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/17/hello-world - 副本/">内景期待照片</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
-        
-        <h2 id="内景期待照片"><a href="#内景期待照片" class="headerlink" title="内景期待照片"></a>内景期待照片</h2><h3 id="内景"><a href="#内景" class="headerlink" title="内景"></a>内景</h3><p><img src="http://p5qifi539.bkt.clouddn.com/%E5%86%85%E6%99%AF02.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%86%85%E6%99%AF03.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%86%85%E6%99%AF01.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%86%85%E6%99%AF04.jpg" alt="image"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/17/hello-world - 副本/" data-id="cjevf4t7r0005h4woqqcib32x" class="article-share-link">Compartir</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/03/17/hello-world/" class="article-date">
-  <time datetime="2018-03-17T11:10:20.315Z" itemprop="datePublished">2018-03-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/17/hello-world/">期待照片集合</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!-- Table of Contents -->
-        
-        <h2 id="期待照片集合"><a href="#期待照片集合" class="headerlink" title="期待照片集合"></a>期待照片集合</h2><h3 id="内景"><a href="#内景" class="headerlink" title="内景"></a>内景</h3><p><img src="http://p5qifi539.bkt.clouddn.com/%E5%86%85%E6%99%AF02.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%86%85%E6%99%AF03.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%86%85%E6%99%AF01.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%86%85%E6%99%AF04.jpg" alt="image"></p>
-<h3 id="美人鱼基地"><a href="#美人鱼基地" class="headerlink" title="美人鱼基地"></a>美人鱼基地</h3><p><img src="http://p5qifi539.bkt.clouddn.com/%E7%BE%8E%E4%BA%BA%E9%B1%BC02.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E7%BE%8E%E4%BA%BA%E9%B1%BC01.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E7%BE%8E%E4%BA%BA%E9%B1%BC05.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E7%BE%8E%E4%BA%BA%E9%B1%BC03.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E7%BE%8E%E4%BA%BA%E9%B1%BC04.jpg" alt="image"></p>
-<h3 id="官湖森系"><a href="#官湖森系" class="headerlink" title="官湖森系"></a>官湖森系</h3><p><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB03.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB02.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB10.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB04.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB06.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB08.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB01.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB05.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB07.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%A3%AE%E7%B3%BB09.jpg" alt="image"></p>
-<h3 id="官湖海边"><a href="#官湖海边" class="headerlink" title="官湖海边"></a>官湖海边</h3><p><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B902.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B901.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B905.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B904.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B907.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B903.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B906.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B918.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B917.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B919.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B916.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B921.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B913.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B914.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B920.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B911.jpg" alt="image"><br>![image]<a href="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B908.jpg" target="_blank" rel="noopener">http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B908.jpg</a>)<br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B909.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B910.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B915.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E6%B5%B7%E8%BE%B912.jpg" alt="image"></p>
-<h3 id="官湖夜景"><a href="#官湖夜景" class="headerlink" title="官湖夜景"></a>官湖夜景</h3><p><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF01.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF02.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF05.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF04.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF09.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF06.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF03.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF08.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF07.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E5%A4%9C%E6%99%AF10.jpg" alt="image"></p>
-<h2 id="素颜照"><a href="#素颜照" class="headerlink" title="素颜照"></a>素颜照</h2><p><img src="http://p5qifi539.bkt.clouddn.com/%E8%87%AA%E5%B7%B101.jpg" alt="image"><br><img src="http://p5qifi539.bkt.clouddn.com/%E8%87%AA%E5%B7%B102.jpg" alt="image"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/17/hello-world/" data-id="cjevf4t7q0004h4woiaipqm1u" class="article-share-link">Compartir</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archivos</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li></ul>
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
     </div>
   </div>
+  <div id="local-search-result"></div>
+</div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Posts recientes</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2018/03/17/hello-world - 副本 (6)/">素颜照</a>
-          </li>
-        
-          <li>
-            <a href="/2018/03/17/hello-world - 副本 (5)/">官湖夜景期待照片</a>
-          </li>
-        
-          <li>
-            <a href="/2018/03/17/hello-world - 副本 (4)/">官湖海边期待照片</a>
-          </li>
-        
-          <li>
-            <a href="/2018/03/17/hello-world - 副本 (3)/">官湖森系期待照片</a>
-          </li>
-        
-          <li>
-            <a href="/2018/03/17/hello-world - 副本 (2)/">美人鱼基地期待照片</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 杨延平<br>
-      Construido por <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
   
 </nav>
+
+
+  
+
+
+
+ </div>
+    </header>
+
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/25/sql查询优化---order by /">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杨延平">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://p6681t98v.bkt.clouddn.com/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="风起">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/25/sql查询优化---order by /" itemprop="url">sql查询优化-- 索引命中</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-25T21:49:27+08:00">2018-04-25</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p> <strong>下图是我们服务的详情页， 出现的问题是什么呢？</strong>在用户查询发送短信详情的情况下，用户的页面请求迟迟不反回，然后报错。<br><img src="http://p7qvktbw7.bkt.clouddn.com/SMN%E6%9C%8D%E5%8A%A1%E8%AF%A6%E6%83%85%E9%A1%B52.png" alt="image"><br>　<strong>问题的原因是什么呢</strong>，保障的客户是我们服务的大客户，消息量非常大，　目前为止已经这张详情表已经有５千万左右的数据量。这个页面我们的处理有两个，一个是查数据，另一个就是count一个总条数， 在现网分别分析了下两条sql都在几百秒。因此问题很明显在sql这两条语句上面, 那么一个一个分析。<br>　 <strong>第一条慢sql如下</strong><br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT ENDPOINT, NATION_CODE, MESSAGE_ID, SIGN_ID, CREATE_TIME, DELIVER_TIME, STATUS, CODE WHERE OWNER_ID = ? AND CREATE_TIME &gt; ? AND CREAT_TIME &lt; ? ORDER BY ID DESC  LIMIT ? OFFSET ?;</span><br></pre></td></tr></table></figure></p>
+<pre><code>　　这张表当前索引情况： 、、、、
+　　explan 发现 seq scan， 没命中索引， 在这种数据量下全表扫肯定不行。另一个问题是这个表的排序用的是quicksort,  理论上b+tree是递增排序的，因此可以省去排序的时间。
+</code></pre><p>　<strong>解决办法</strong><br>　 　1.   添加一条（CREAT_TIME, OWNER_ID）的联合索引<br>　　２.   Order by ID DESC 改为 Order by CREAT_TIME DESC<br>　　改第一条的原因是因为主要产生筛选作用的是CREATE_TIME, 为了命中索引因此做这个改进。<br>　　改第二条的原因是当Order by 的关键字在Where中有， 才不会filesort.<br>　<strong>第二条慢sql</strong><br>　　产生第二条慢sql的原因就是因为使用count， 对于带where的count的sql语句的优化空间非常小，因为是实时的计数，扫描数据量根据查询范围可能非常大。<br>　<strong>解决办法</strong><br>　 这块的解决办法有很多， 首先使用缓存count是不行的，因为查询中带实时性。那么剩下的解决办法就是去掉这个count，不给用户反馈了。 </p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/25/替换公司内的remoteCache的client/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杨延平">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://p6681t98v.bkt.clouddn.com/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="风起">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/25/替换公司内的remoteCache的client/" itemprop="url">未命名</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-25T21:41:25+08:00">2018-04-25</time>
+            
+
+            
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
-<script src="/js/script.js"></script>
+    
+  </section>
+
+  
 
 
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="http://p6681t98v.bkt.clouddn.com/avatar.jpg"
+                alt="杨延平" />
+            
+              <p class="site-author-name" itemprop="name">杨延平</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate"> 
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">杨延平</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Gemini</a> v6.0.6</div>
+
+
+
+
+        
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=65509327";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
 
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.0.6"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.0.6"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.0.6"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.0.6"></script>
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.0.6"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
 </body>
 </html>

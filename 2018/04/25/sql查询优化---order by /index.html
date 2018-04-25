@@ -99,13 +99,19 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="风起">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="下图是我们服务的详情页， 出现的问题是什么呢？在用户查询发送短信详情的情况下，用户的页面请求迟迟不反回，然后报错。　问题的原因是什么呢，保障的客户是我们服务的大客户，消息量非常大，　目前为止已经这张详情表已经有５千万左右的数据量。这个页面我们的处理有两个，一个是查数据，另一个就是count一个总条数， 在现网分别分析了下两条sql都在几百秒。因此问题很明显在sql这两条语句上面, 那么一个一个分">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sql查询优化-- 索引命中">
+<meta property="og:url" content="http://yoursite.com/2018/04/25/sql查询优化---order by /index.html">
 <meta property="og:site_name" content="风起">
+<meta property="og:description" content="下图是我们服务的详情页， 出现的问题是什么呢？在用户查询发送短信详情的情况下，用户的页面请求迟迟不反回，然后报错。　问题的原因是什么呢，保障的客户是我们服务的大客户，消息量非常大，　目前为止已经这张详情表已经有５千万左右的数据量。这个页面我们的处理有两个，一个是查数据，另一个就是count一个总条数， 在现网分别分析了下两条sql都在几百秒。因此问题很明显在sql这两条语句上面, 那么一个一个分">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://p7qvktbw7.bkt.clouddn.com/SMN%E6%9C%8D%E5%8A%A1%E8%AF%A6%E6%83%85%E9%A1%B52.png">
+<meta property="og:updated_time" content="2018-04-25T15:20:06.911Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="风起">
+<meta name="twitter:title" content="sql查询优化-- 索引命中">
+<meta name="twitter:description" content="下图是我们服务的详情页， 出现的问题是什么呢？在用户查询发送短信详情的情况下，用户的页面请求迟迟不反回，然后报错。　问题的原因是什么呢，保障的客户是我们服务的大客户，消息量非常大，　目前为止已经这张详情表已经有５千万左右的数据量。这个页面我们的处理有两个，一个是查数据，另一个就是count一个总条数， 在现网分别分析了下两条sql都在几百秒。因此问题很明显在sql这两条语句上面, 那么一个一个分">
+<meta name="twitter:image" content="http://p7qvktbw7.bkt.clouddn.com/SMN%E6%9C%8D%E5%8A%A1%E8%AF%A6%E6%83%85%E9%A1%B52.png">
 
 
 
@@ -114,7 +120,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/25/sql查询优化---order by /"/>
 
 
 
@@ -124,7 +130,7 @@
   };
 </script>
 
-  <title>归档 | 风起</title>
+  <title>sql查询优化-- 索引命中 | 风起</title>
   
 
 
@@ -171,7 +177,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -302,140 +308,160 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      
-      <span class="archive-page-counter">
-        
-        
-        
-          
-        
-        嗯..! 目前共计 2 篇日志。 继续努力。
-      </span>
-      
-
-      
-
-        
-        
-        
-
-        
-          
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
-
-        
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/25/sql查询优化---order by /">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杨延平">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://p6681t98v.bkt.clouddn.com/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="风起">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/04/25/sql查询优化---order by /" itemprop="url">
-              
-                <span itemprop="name">sql查询优化-- 索引命中</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">sql查询优化-- 索引命中</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-25T21:49:27+08:00"
-              content="2018-04-25" >
-          04-25
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-25T21:49:27+08:00">2018-04-25</time>
+            
 
-    </header>
-  </article>
+            
+            
 
+            
+          </span>
 
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/04/25/替换公司内的remoteCache的client/" itemprop="url">
-              
-                <span itemprop="name">未命名</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-25T21:41:25+08:00"
-              content="2018-04-25" >
-          04-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
+      
+        <p> <strong>下图是我们服务的详情页， 出现的问题是什么呢？</strong>在用户查询发送短信详情的情况下，用户的页面请求迟迟不反回，然后报错。<br><img src="http://p7qvktbw7.bkt.clouddn.com/SMN%E6%9C%8D%E5%8A%A1%E8%AF%A6%E6%83%85%E9%A1%B52.png" alt="image"><br>　<strong>问题的原因是什么呢</strong>，保障的客户是我们服务的大客户，消息量非常大，　目前为止已经这张详情表已经有５千万左右的数据量。这个页面我们的处理有两个，一个是查数据，另一个就是count一个总条数， 在现网分别分析了下两条sql都在几百秒。因此问题很明显在sql这两条语句上面, 那么一个一个分析。<br>　 <strong>第一条慢sql如下</strong><br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT ENDPOINT, NATION_CODE, MESSAGE_ID, SIGN_ID, CREATE_TIME, DELIVER_TIME, STATUS, CODE WHERE OWNER_ID = ? AND CREATE_TIME &gt; ? AND CREAT_TIME &lt; ? ORDER BY ID DESC  LIMIT ? OFFSET ?;</span><br></pre></td></tr></table></figure></p>
+<pre><code>　　这张表当前索引情况： 、、、、
+　　explan 发现 seq scan， 没命中索引， 在这种数据量下全表扫肯定不行。另一个问题是这个表的排序用的是quicksort,  理论上b+tree是递增排序的，因此可以省去排序的时间。
+</code></pre><p>　<strong>解决办法</strong><br>　 　1.   添加一条（CREAT_TIME, OWNER_ID）的联合索引<br>　　２.   Order by ID DESC 改为 Order by CREAT_TIME DESC<br>　　改第一条的原因是因为主要产生筛选作用的是CREATE_TIME, 为了命中索引因此做这个改进。<br>　　改第二条的原因是当Order by 的关键字在Where中有， 才不会filesort.<br>　<strong>第二条慢sql</strong><br>　　产生第二条慢sql的原因就是因为使用count， 对于带where的count的sql语句的优化空间非常小，因为是实时的计数，扫描数据量根据查询范围可能非常大。<br>　<strong>解决办法</strong><br>　 这块的解决办法有很多， 首先使用缓存count是不行的，因为查询中带实时性。那么剩下的解决办法就是去掉这个count，不给用户反馈了。 </p>
+
+      
     </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/25/替换公司内的remoteCache的client/" rel="next" title="">
+                <i class="fa fa-chevron-left"></i> 
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -656,6 +682,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.0.6"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.0.6"></script>
+
+
 
   
 
